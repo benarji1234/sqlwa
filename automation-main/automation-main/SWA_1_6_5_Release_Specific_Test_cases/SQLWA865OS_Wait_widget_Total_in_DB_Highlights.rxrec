@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2db8fbeb-b24b-4e85-9bef-b12540e48abd"
+mode="Global"
+rxversion="8.2">
+	<name>
+		SQLWA865OS_Wait_widget_Total_in_DB_Highlights
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SQLWA865OS_Wait_widget_Total_in_DB_Highlights"
+	namespace="SWA_1_6_5_Release_Specific_Test_cases">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="de1dc304-36fb-4392-ae93-45f724f582d2"
+	name="SWA_1_6_5_Release_Specific_Test_casesRepository"
+	relativepath="SWA_1_6_5_Release_Specific_Test_casesRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SWA_1_6_5_Release_Specific_Test_casesRepository"
+		namespace="SWA_1_6_5_Release_Specific_Test_cases">
+		</codegen>
+		<rootfolder
+		id="cdafef3c-5abb-4be7-8e42-0008f724cafb"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SQLWA865OS_Wait_widget_Total_in_DB_Highlights.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

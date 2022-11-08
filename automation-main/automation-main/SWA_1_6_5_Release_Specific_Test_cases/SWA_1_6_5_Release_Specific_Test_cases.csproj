@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{EE40CC02-F466-4597-8ED7-DDDE1BF87F1B}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SWA_1_6_5_Release_Specific_Test_cases</RootNamespace>
+    <AssemblyName>SWA_1_6_5_Release_Specific_Test_cases</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>50883A3A-EF1C-4C82-99CD-F69B4A493739</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>8bdee2f4-76cf-4c4a-bb6b-a3d6f7290069</id>
+    </Compile>
+    <Compile Include="CommonFlows\Installation.cs">
+      <BoundTo>dedf6759-153a-4847-8849-b1f85bd819fa</BoundTo>
+      <DependentUpon>Installation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d61cc233-f4bd-45b6-99f3-92838970b8c7</id>
+    </Compile>
+    <Compile Include="CommonFlows\Installation.UserCode.cs">
+      <BoundTo>dedf6759-153a-4847-8849-b1f85bd819fa</BoundTo>
+      <DependentUpon>Installation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6689c457-5825-4564-94f0-04af5d4d09af</id>
+    </Compile>
+    <Compile Include="CommonFlows\InstallationCode.cs">
+      <id>2e29fedf-c240-410c-9118-dfc92aad0d6e</id>
+    </Compile>
+    <Compile Include="CommonFlows\UserCodeModule1.cs">
+      <id>f7cbfb0d-3b47-4354-aff2-ec1629b7ad71</id>
+    </Compile>
+    <Compile Include="CommonUtilities\SWAWebCommon.cs">
+      <id>9336981a-ffad-42f3-a849-a3380e54e3ca</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>009e555e-fa7a-4a8d-92cc-f298c982b3c9</id>
+    </Compile>
+    <Compile Include="Repositories\CommonRepo.cs">
+      <DependentUpon>CommonRepo.rxrep</DependentUpon>
+      <id>26ae24d0-2d4e-4b42-b5b4-2f30341a1400</id>
+      <BoundTo>f7e64244-a9a0-4e17-9b05-e6ec55ff46a2</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Rough_Work.cs">
+      <BoundTo>c0cda037-84a3-43e3-a5f6-774ac24f5b9f</BoundTo>
+      <DependentUpon>Rough_Work.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>35dbc4c5-2b96-4ad9-a84c-df737ffe38be</id>
+    </Compile>
+    <Compile Include="Rough_Work.UserCode.cs">
+      <BoundTo>c0cda037-84a3-43e3-a5f6-774ac24f5b9f</BoundTo>
+      <DependentUpon>Rough_Work.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d007b86-be5f-4055-8720-8236e4305e38</id>
+    </Compile>
+    <Compile Include="scripts\C183756_FreshSetup.cs">
+      <id>b9b07f11-08f5-47cc-a273-f31123645bb2</id>
+    </Compile>
+    <Compile Include="scripts\C184748_OSWaitwidget_TimeFrame1Day.cs">
+      <id>d5d8e88e-003e-4c5d-9608-02dab9d642f5</id>
+    </Compile>
+    <Compile Include="scripts\C184749_CPUWidget_TimeFrame1Day.cs">
+      <id>e250cc9b-5a2f-40be-9d26-76d9042dd2b8</id>
+    </Compile>
+    <Compile Include="scripts\C184750_LogWaitwidget_TimeFrame1Day.cs">
+      <id>8778b27e-4a8b-44b9-a0b4-92174b414f9f</id>
+    </Compile>
+    <Compile Include="scripts\C184751_LockWaitWidget_TimeFrame1Day.cs">
+      <id>4fcc516f-149b-4b02-b1d1-75e917d422a7</id>
+    </Compile>
+    <Compile Include="scripts\C184752_Internalwaitwidget_1DayTimeFrameDelay.cs">
+      <id>0af050d0-4789-40fe-a18a-73261fa1f18a</id>
+    </Compile>
+    <Compile Include="scripts\C184753_IOWaitWidget_InconsistentOnDrillDown.cs">
+      <id>33c0d26c-3262-4fc2-91bb-d491f135fd22</id>
+    </Compile>
+    <Compile Include="scripts\C184761_OSWaitwidgetVerification.cs">
+      <id>a894fb9f-207c-4cd8-9cec-806952e16b96</id>
+    </Compile>
+    <Compile Include="scripts\C184762_UsingCPUwiget_TotalinDBHighlights.cs">
+      <id>6ebcad58-d947-40f4-b14b-a1811e87d00a</id>
+    </Compile>
+    <Compile Include="scripts\C184763_LogWaitWidgetonPerformingDrillDown.cs">
+      <id>31bbd6a8-6290-4598-98cb-afa70323d21f</id>
+    </Compile>
+    <Compile Include="scripts\C184764_LockWaitwidget_onPerformingDrillDown.cs">
+      <id>f73d9c28-dd97-4eb7-b5b3-c23e31b2bf3f</id>
+    </Compile>
+    <Compile Include="scripts\C184765_InternalWaitwidget_onPerformingDrillDown.cs">
+      <id>f1e365a3-9ba6-4820-bc2d-6b45af865117</id>
+    </Compile>
+    <Compile Include="scripts\C184766_IOWaitwidget_onPerformingDrillDown.cs">
+      <id>d2306aab-afb0-4ece-b4db-64fe9ca7c243</id>
+    </Compile>
+    <Compile Include="scripts\C187179_DashboardLoginwithinvalidcredentialsandverifythebehavior.cs">
+      <id>8a32ab75-b947-4d47-bc98-3a1d9b751aeb</id>
+    </Compile>
+    <Compile Include="scripts\C187257_PopupwhenTopAccessedObjectsisselected.cs">
+      <id>f2a391b0-2113-4c6f-938b-347daab25782</id>
+    </Compile>
+    <Compile Include="scripts\SQLWA864_Verifyifallthemachinesarebeingdisplayedunder_TopMachineswidget_whentimeintervalischanged.cs">
+      <id>3b4818be-5171-48b2-9069-5d6f9db376b3</id>
+    </Compile>
+    <Compile Include="SQLWA864_Verify_if_all_the_machines_are_being_displayed_under_Top_Machines_widget_when_time_interval_is_cha.cs">
+      <BoundTo>def29c2c-6354-4e18-9162-57aef188bdd7</BoundTo>
+      <DependentUpon>SQLWA864_Verify_if_all_the_machines_are_being_displayed_under_Top_Machines_widget_when_time_interval_is_cha.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a054bcf9-2fd2-4b32-a39d-376f4de309b9</id>
+    </Compile>
+    <Compile Include="SQLWA864_Verify_if_all_the_machines_are_being_displayed_under_Top_Machines_widget_when_time_interval_is_cha.UserCode.cs">
+      <BoundTo>def29c2c-6354-4e18-9162-57aef188bdd7</BoundTo>
+      <DependentUpon>SQLWA864_Verify_if_all_the_machines_are_being_displayed_under_Top_Machines_widget_when_time_interval_is_cha.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec87a4ad-f689-4e09-92c2-51fc4796ed90</id>
+    </Compile>
+    <Compile Include="SQLWA865OS_Wait_widget_Total_in_DB_Highlights.cs">
+      <BoundTo>86d48cf2-bbb0-4de5-80d6-d656e1da0a3b</BoundTo>
+      <DependentUpon>SQLWA865OS_Wait_widget_Total_in_DB_Highlights.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e097ce91-3bf9-4493-b958-f90cfd85f4c6</id>
+    </Compile>
+    <Compile Include="SQLWA865OS_Wait_widget_Total_in_DB_Highlights.UserCode.cs">
+      <BoundTo>86d48cf2-bbb0-4de5-80d6-d656e1da0a3b</BoundTo>
+      <DependentUpon>SQLWA865OS_Wait_widget_Total_in_DB_Highlights.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f68f7ef-536d-402b-aeea-11894c5334bb</id>
+    </Compile>
+    <Compile Include="SQLWA873_Onperformingsamelevelofdrilldown.cs">
+      <BoundTo>929bf735-e760-4441-8226-13b382a848aa</BoundTo>
+      <DependentUpon>SQLWA873_Onperformingsamelevelofdrilldown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14b13499-7a61-4ac2-891e-8cd4e45325c3</id>
+    </Compile>
+    <Compile Include="SQLWA873_Onperformingsamelevelofdrilldown.UserCode.cs">
+      <BoundTo>929bf735-e760-4441-8226-13b382a848aa</BoundTo>
+      <DependentUpon>SQLWA873_Onperformingsamelevelofdrilldown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c94c412-3c0e-4b8e-8a1f-2524e68f8100</id>
+    </Compile>
+    <Compile Include="SWA_1_6_5_Release_Specific_Test_casesRepository.cs">
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+      <DependentUpon>SWA_1_6_5_Release_Specific_Test_casesRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>fcecc46a-0e89-495c-b7ac-d002db95ab1c</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>51bfb3d2-3357-4e22-b9d2-9de96eaa8f67</id>
+    </None>
+    <None Include="CommonFlows\Installation.rxrec">
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+      <id>dedf6759-153a-4847-8849-b1f85bd819fa</id>
+      <recordtableid>1c6ecfc6-b778-4e1f-b33c-13139900aff7</recordtableid>
+    </None>
+    <None Include="Repositories\CommonRepo.rximg">
+      <DependentUpon>CommonRepo.rxrep</DependentUpon>
+      <id>a12e1748-f4ac-4c22-a164-3a7be7d79b83</id>
+      <BoundTo>f7e64244-a9a0-4e17-9b05-e6ec55ff46a2</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Repositories\CommonRepo.rxrep">
+      <id>f7e64244-a9a0-4e17-9b05-e6ec55ff46a2</id>
+      <repoid>9aac645a-0209-44b6-b9d8-e21570d8dac6</repoid>
+      <reporootid>0251c6f7-1d62-4d3d-8f75-6835a267e1ab</reporootid>
+    </None>
+    <None Include="Rough_Work.rxrec">
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+      <id>c0cda037-84a3-43e3-a5f6-774ac24f5b9f</id>
+      <recordtableid>726eb067-681a-48df-9eb9-28c36b299151</recordtableid>
+    </None>
+    <None Include="SQLWA864_Verify_if_all_the_machines_are_being_displayed_under_Top_Machines_widget_when_time_interval_is_cha.rxrec">
+      <id>def29c2c-6354-4e18-9162-57aef188bdd7</id>
+      <recordtableid>94297229-5a05-4f60-b591-0f4da375718e</recordtableid>
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+    </None>
+    <None Include="SQLWA865OS_Wait_widget_Total_in_DB_Highlights.rxrec">
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+      <id>86d48cf2-bbb0-4de5-80d6-d656e1da0a3b</id>
+      <recordtableid>2db8fbeb-b24b-4e85-9bef-b12540e48abd</recordtableid>
+    </None>
+    <None Include="SQLWA873_Onperformingsamelevelofdrilldown.rxrec">
+      <id>929bf735-e760-4441-8226-13b382a848aa</id>
+      <recordtableid>22b2b08e-ce9c-4fa2-963d-d4ae3d80a6dc</recordtableid>
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+    </None>
+    <None Include="SWA_1_6_5_Release_Specific_Test_casesRepository.rximg">
+      <BoundTo>50883A3A-EF1C-4C82-99CD-F69B4A493739</BoundTo>
+      <DependentUpon>SWA_1_6_5_Release_Specific_Test_casesRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>81c0227d-6d76-418d-8c0d-1549311d7ea8</id>
+    </None>
+    <None Include="SWA_1_6_5_Release_Specific_Test_casesRepository.rxrep">
+      <id>50883A3A-EF1C-4C82-99CD-F69B4A493739</id>
+      <repoid>de1dc304-36fb-4392-ae93-45f724f582d2</repoid>
+      <reporootid>cdafef3c-5abb-4be7-8e42-0008f724cafb</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SWA_1_6_5_Release_Specific_Test_cases.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4b13fde5-0be1-495d-94a2-ee46bc3f4758</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonUtilities">
+      <id>796a74fc-5d40-4dbd-ba71-12674eea7b46</id>
+    </Folder>
+    <Folder Include="CommonFlows">
+      <id>14f99d9e-f38f-4285-8c03-08b2e296938b</id>
+    </Folder>
+    <Folder Include="Repositories">
+      <id>03670a35-7f6c-4839-8f11-99fcd83c6df0</id>
+    </Folder>
+    <Folder Include="scripts">
+      <id>0df967f2-19cf-4510-95a3-78afb36745bb</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{7F4B3A0E-731E-4470-B8E8-8CB7693749C1}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
